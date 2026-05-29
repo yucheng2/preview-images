@@ -1,0 +1,10 @@
+@import 'tailwindcss';
+
+.masonry {
+  column-count: auto;
+  column-gap: 16px;
+}
+
+.masonry-item {
+  break-inside: avoid;
+}
