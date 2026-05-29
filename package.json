@@ -10,7 +10,44 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "version": "npm version patch && git push && git push --tags"
+  },
+  "build": {
+    "appId": "com.preview-images.app",
+    "productName": "Preview Images",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*"
+    ],
+    "mac": {
+      "category": "public.app-category.graphics-design",
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Graphics"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "yuchengfan",
+      "repo": "preview-images"
+    }
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.0",
