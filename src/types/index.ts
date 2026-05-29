@@ -1,6 +1,4 @@
-import type { FileType } from '../types'
-
-export type { FileType }
+export type FileType = 'image' | 'folder'
 
 export interface FileItem {
   name: string

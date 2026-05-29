@@ -7,7 +7,6 @@ const emit = defineEmits<{
 }>()
 
 const store = useSelectionStore()
-const isDragging = ref(false)
 const manualPath = ref('')
 
 async function handleSelectFolder() {
