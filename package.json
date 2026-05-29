@@ -4,7 +4,10 @@
   "version": "1.0.0",
   "private": true,
   "description": "A desktop application for previewing images with folder navigation",
-  "author": "yuchengfan",
+  "author": {
+    "name": "yuchengfan",
+    "email": "yuchengfan@users.noreply.github.com"
+  },
   "main": "dist-electron/main.js",
   "scripts": {
     "dev": "vite",
